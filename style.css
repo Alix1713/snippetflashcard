@@ -1,9 +1,9 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+
 :root {
-    /* declare a variable with `--` syntax */
-    --dark: #13293d;
-    --light: #fff;
-    --navlink-color: #b9c6ae;
+    /* css variable for root */
+    --dark: #09131d;
+    --light: rgb(185, 26, 224);
+    --navlink-color: #78f80f;
   }
   
   body {
@@ -17,9 +17,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
-    color: var(--light);
+    color: var(--light);s
   }
   
   h1 {
@@ -84,11 +83,15 @@
     background-color: var(--dark);
     color: var(--light);
   }
-  
+  /*scrren sizing--edit?*/
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
+    @media screen and (max-width: 768px) {
+        main,
+        nav {
+          flex-direction: column;
   
     main {
       max-width: 1200px;
